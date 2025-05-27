@@ -1,0 +1,31 @@
+.vs-sidebar {
+    width: 50px;
+    background: #23262E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+    border-right: 1px solid #282c34;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .vs-sidebar-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: #768390;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .vs-sidebar-btn.active,
+  .vs-sidebar-btn:hover {
+    background: #23293a;
+    color: #fcfcfc;
+  }
