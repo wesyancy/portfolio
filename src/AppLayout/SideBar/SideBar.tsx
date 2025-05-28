@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { VscFiles, VscMail } from 'react-icons/vsc';
+import { VscFiles, VscMail, VscAccount } from 'react-icons/vsc';
 import './SideBar.css';
 
 const SideBar = () => {
@@ -19,7 +19,7 @@ const SideBar = () => {
                     'vs-sidebar-btn' + (isActive ? ' active' : '')
                 }
                 title="Bio">
-                <VscFiles size={24} />
+                <VscAccount size={24} />
             </NavLink>
             <NavLink
                 to="/contact"

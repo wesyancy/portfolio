@@ -1,6 +1,6 @@
 .vs-sidebar {
     width: 50px;
-    background: #23262E;
+    background: #323232;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,6 @@
   
   .vs-sidebar-btn.active,
   .vs-sidebar-btn:hover {
-    background: #23293a;
+    background: #323232;
     color: #fcfcfc;
   }

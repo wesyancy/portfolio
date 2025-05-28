@@ -1,0 +1,61 @@
+/* /Users/wes/Programming/Portfolio/src/AppLayout/StatusBar/StatusBar.css */
+.statusbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background: #007acc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  z-index: 100;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.12);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.statusbar-left, .statusbar-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* .statusbar-left {
+  margin-left: 8px;
+} */
+
+.statusbar-right {
+  margin-right: 8px;
+}
+
+.statusbar-item {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.statusbar-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.remote {
+  background: #3d8060;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 4px;
+  border-radius: 2px 0 0 2px;
+}
+
+.remote:hover {
+  background: #2ea463;
+}
+
+
+.statusbar .statusbar-item svg {
+  vertical-align: middle;
+}
