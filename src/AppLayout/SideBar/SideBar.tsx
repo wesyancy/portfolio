@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { VscFiles, VscMail, VscAccount } from 'react-icons/vsc';
+import { VscFiles, VscMail, VscAccount, VscGithubInverted } from 'react-icons/vsc';
 import './SideBar.css';
 
 const SideBar = () => {
@@ -28,6 +28,14 @@ const SideBar = () => {
                 }
                 title="Contact">
                 <VscMail size={24} />
+            </NavLink>
+            <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                    'vs-sidebar-btn' + (isActive ? ' active' : '')
+                }
+                title="Contact">
+                <VscGithubInverted size={24} />
             </NavLink>
         </nav>
     );

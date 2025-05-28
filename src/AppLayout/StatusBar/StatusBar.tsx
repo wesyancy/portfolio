@@ -26,10 +26,6 @@ const StatusBar: React.FC = () => (
         <VscWarning style={{ marginRight: 4}} />
         0
       </div>
-      {/* <div className="statusbar-item">
-        <FaInfoCircle style={{ marginRight: 4 }} />
-        0
-      </div> */}
     </div>
     <div className="statusbar-right">
       <div className="statusbar-item">

@@ -1,0 +1,76 @@
+.projects-layout {
+  display: flex;
+  height: 100vh; /* or 100% if you want it to only fill parent */
+  background: #1e1e1e;
+}
+
+.explorer-pane {
+  width: 240px;
+  background: #252526;
+  color: #d4d4d4;
+  border-right: 1px solid #2a2d2e;
+  padding-top: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  min-width: 180px;
+  user-select: none;
+}
+
+.explorer-folder {
+  display: flex;
+  align-items: center;
+  padding: 4px 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  color: #d7ba7d;
+}
+
+.explorer-folder:hover {
+  background: #31333d;
+}
+
+.folder-icon {
+  margin: 0 7px 0 2px;
+  color: #cca700;
+  font-size: 18px;
+}
+
+.folder-name {
+  margin-left: 3px;
+}
+
+.explorer-files {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 34px;
+}
+
+.explorer-file {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #d4d4d4;
+  transition: background 0.15s;
+}
+
+.explorer-file:hover {
+  background: #2b2d31;
+  color: #fff;
+}
+
+.file-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #bbb;
+}
+
+.projectPageDiv {
+  flex: 1;
+  padding: 32px 50px;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: inherit;
+}

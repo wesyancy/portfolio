@@ -1,13 +1,34 @@
+import './Contact.css'
+import { Link } from 'react-router-dom';
+
 const Contact = () => {
-
     return (
-        <div className='contactPageDiv'>
-            <h1>Contact page</h1>
-            <p>Email</p>
-            <p>Newsletter</p>
-            <p>LinkedIn</p>
-            <p>GitHub</p>
-
+        <div className="contactPageDiv">
+            <h1>Contact Info</h1>
+            <p>
+                <Link to="mailto:wes.kyancy@gmail.com" id="externalLink">
+                    Email
+                </Link>
+            </p>
+            <p>
+                <Link
+                    to="https://www.bite-sizedbrilliance.com"
+                    id="externalLink">
+                    Newsletter
+                </Link>
+            </p>
+            <p>
+                <Link
+                    to="https://www.linkedin.com/in/wesley-yancy"
+                    id="externalLink">
+                    LinkedIn
+                </Link>
+            </p>
+            <p>
+                <Link to="https://github.com/wesyancy" id="externalLink">
+                    GitHub
+                </Link>
+            </p>
         </div>
     );
 };

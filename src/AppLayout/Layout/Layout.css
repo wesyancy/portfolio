@@ -1,20 +1,23 @@
 .vs-root {
-  display: flex;
-  height: 100vh;
-  background: #23262E;
-  color: #c8d3f5;
+    display: flex;
+    height: 100vh;
+    background: #1e1e1e;
+    color: #c8d3f5;
 }
 
 .vs-main-area {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
 }
 
 .vs-content {
-  flex: 1;
-  background: #1e1e1e;
-  padding: 2rem;
-  overflow: auto;
+    flex: 1;
+    background: #1e1e1e;
+    /* padding: 2rem; */
+    color: #d4d4d4;
+    overflow: auto;
+    font-family: 'SFMono-Regular', Menlo, Monaco, 'Liberation Mono',
+        'Courier New', monospace;
 }
