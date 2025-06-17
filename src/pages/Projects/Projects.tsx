@@ -2,6 +2,7 @@ import './Projects.css';
 import { useState } from 'react';
 import { VscChevronDown, VscChevronRight } from 'react-icons/vsc';
 import { FaReact } from 'react-icons/fa';
+import Backgrounder from '../../components/backgrounder/backgrounder';
 
 const explorerData = [
   { name: 'Personal Portfolio', ext: 'tsx' },
@@ -35,6 +36,7 @@ const Projects = () => {
             <div className='projectPageDiv'>
                 <h1>Here are my Projects</h1>
                 <p>Shown in a small window</p>
+                <Backgrounder></Backgrounder>
             </div>
         </div>
     );

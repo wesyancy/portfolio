@@ -3,14 +3,28 @@
     background: #323232;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 8px 0;
     border-right: 1px solid #282c34;
     min-height: 100vh;
     box-sizing: border-box;
-  }
-  
-  .vs-sidebar-btn {
+}
+
+.vs-sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vs-sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.vs-sidebar-btn {
     width: 36px;
     height: 36px;
     display: flex;
@@ -22,10 +36,8 @@
     transition: background 0.2s, color 0.2s;
     text-decoration: none;
     font-size: 22px;
-  }
-  
-  .vs-sidebar-btn.active,
-  .vs-sidebar-btn:hover {
-    background: #323232;
+}
+
+.vs-sidebar-btn.active:hover {
     color: #fcfcfc;
-  }
+}

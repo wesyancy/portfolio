@@ -12,7 +12,7 @@ const Contact = () => {
             </p>
             <p>
                 <Link
-                    to="https://www.bite-sizedbrilliance.com"
+                    to="https://bite-sizedbrilliance.com"
                     id="externalLink">
                     Newsletter
                 </Link>
