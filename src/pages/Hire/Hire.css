@@ -1,3 +1,8 @@
 .hirePageDiv {
     padding: 2rem;
 }
+
+.resume-iframe {
+    width: 90svw;
+    height: 80svh;
+}

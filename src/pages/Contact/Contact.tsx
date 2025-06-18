@@ -1,4 +1,4 @@
-import './Contact.css'
+import './Contact.css';
 import { Link } from 'react-router-dom';
 
 const Contact = () => {
@@ -6,26 +6,34 @@ const Contact = () => {
         <div className="contactPageDiv">
             <h1>Contact Info</h1>
             <p>
-                <Link to="mailto:wes.kyancy@gmail.com" id="externalLink">
+                <Link
+                    to="mailto:wes.kyancy@gmail.com"
+                    id="externalLink"
+                    target="_blank">
                     Email
                 </Link>
             </p>
             <p>
                 <Link
-                    to="https://bite-sizedbrilliance.com"
-                    id="externalLink">
+                    to="https://bitesizedbrilliance.substack.com/"
+                    id="externalLink"
+                    target="_blank">
                     Newsletter
                 </Link>
             </p>
             <p>
                 <Link
                     to="https://www.linkedin.com/in/wesley-yancy"
-                    id="externalLink">
+                    id="externalLink"
+                    target="_blank">
                     LinkedIn
                 </Link>
             </p>
             <p>
-                <Link to="https://github.com/wesyancy" id="externalLink">
+                <Link
+                    to="https://github.com/wesyancy"
+                    id="externalLink"
+                    target="_blank">
                     GitHub
                 </Link>
             </p>

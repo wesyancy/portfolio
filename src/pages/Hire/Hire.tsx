@@ -5,7 +5,8 @@ const Hire = () => {
     return (
         <div className='hirePageDiv'>
             <h1>Hire Me</h1>
-            <p>This is my story, told in monospaced font.</p>
+            <p>This is my story, told in a sick font called Poppins.</p>
+            <iframe className='resume-iframe' src='public/Wesley Yancy - Resume.pdf'></iframe>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './backgrounder.css'
+import './backgrounder.css';
 
-const Backgrounder: React.FC = () => {
+const Backgrounder = () => {
     const [imageSrc, setImageSrc] = useState<string | null>(null);
     const [bgColor, setBgColor] = useState<string>('#000000');
     const [bgWidth, setBgWidth] = useState<number>(1800);
@@ -9,7 +9,9 @@ const Backgrounder: React.FC = () => {
 
     // Store original image size/aspect ratio
     const [imgNaturalWidth, setImgNaturalWidth] = useState<number | null>(null);
-    const [imgNaturalHeight, setImgNaturalHeight] = useState<number | null>(null);
+    const [imgNaturalHeight, setImgNaturalHeight] = useState<number | null>(
+        null
+    );
     const [imgWidth, setImgWidth] = useState<number>(800);
     const [imgHeight, setImgHeight] = useState<number>(600);
 
@@ -30,7 +32,13 @@ const Backgrounder: React.FC = () => {
             if (imageSrc) {
                 const img = imgRef.current;
                 if (img && img.complete) {
-                    ctx.drawImage(img, (bgWidth - imgWidth) / 2, (bgHeight - imgHeight) / 2, imgWidth, imgHeight);
+                    ctx.drawImage(
+                        img,
+                        (bgWidth - imgWidth) / 2,
+                        (bgHeight - imgHeight) / 2,
+                        imgWidth,
+                        imgHeight
+                    );
                 }
             }
         }
@@ -44,8 +52,12 @@ const Backgrounder: React.FC = () => {
             setImgNaturalHeight(img.naturalHeight);
 
             // Initialize the edit controls with natural size, if desired:
-            setImgWidth(img.naturalWidth < bgWidth ? img.naturalWidth : bgWidth);
-            setImgHeight(img.naturalHeight < bgHeight ? img.naturalHeight : bgHeight);
+            setImgWidth(
+                img.naturalWidth < bgWidth ? img.naturalWidth : bgWidth
+            );
+            setImgHeight(
+                img.naturalHeight < bgHeight ? img.naturalHeight : bgHeight
+            );
         }
     };
 
@@ -88,7 +100,7 @@ const Backgrounder: React.FC = () => {
     };
 
     return (
-        <div className='backgrounder-master-div'>
+        <div className="backgrounder-master-div">
             <label>
                 Upload image:
                 <input
@@ -105,7 +117,7 @@ const Backgrounder: React.FC = () => {
                         type="color"
                         className="input"
                         value={bgColor}
-                        onChange={e => setBgColor(e.target.value)}
+                        onChange={(e) => setBgColor(e.target.value)}
                     />
                 </label>
             </div>
@@ -117,7 +129,7 @@ const Backgrounder: React.FC = () => {
                         className="input"
                         value={bgWidth}
                         min={imgWidth}
-                        onChange={e => setBgWidth(Number(e.target.value))}
+                        onChange={(e) => setBgWidth(Number(e.target.value))}
                     />
                 </label>
                 <label>
@@ -127,7 +139,7 @@ const Backgrounder: React.FC = () => {
                         className="input"
                         value={bgHeight}
                         min={imgHeight}
-                        onChange={e => setBgHeight(Number(e.target.value))}
+                        onChange={(e) => setBgHeight(Number(e.target.value))}
                     />
                 </label>
             </div>
@@ -140,7 +152,9 @@ const Backgrounder: React.FC = () => {
                         value={imgWidth}
                         min={1}
                         max={bgWidth}
-                        onChange={e => handleImgWidthChange(Number(e.target.value))}
+                        onChange={(e) =>
+                            handleImgWidthChange(Number(e.target.value))
+                        }
                         disabled={!imageSrc}
                     />
                 </label>
@@ -152,10 +166,26 @@ const Backgrounder: React.FC = () => {
                         value={imgHeight}
                         min={1}
                         max={bgHeight}
-                        onChange={e => handleImgHeightChange(Number(e.target.value))}
+                        onChange={(e) =>
+                            handleImgHeightChange(Number(e.target.value))
+                        }
                         disabled={!imageSrc}
                     />
                 </label>
+                <button
+                    onClick={() => {
+                        if (imgNaturalWidth && imgNaturalHeight) {
+                            const targetHeight = Math.round(bgHeight * 0.8);
+                            const newWidth = Math.round(targetHeight * (imgNaturalWidth / imgNaturalHeight));
+                            setImgHeight(targetHeight);
+                            setImgWidth(newWidth);
+                        }
+                    }}
+                    disabled={!imageSrc}
+                    style={{ marginLeft: 8 }}
+                >
+                    Fit Image
+                </button>
             </div>
             <div>
                 <canvas
@@ -164,11 +194,11 @@ const Backgrounder: React.FC = () => {
                     height={bgHeight}
                     style={{
                         border: '1px solid #aaa',
-                        maxWidth: '80%',
+                        maxWidth: '75svw',
+                        maxHeight: '70svh',
                         display: 'block',
-                        margin: '16px 0'
-                    }}
-                ></canvas>
+                        margin: '16px 0',
+                    }}></canvas>
                 {/* Hidden image as offscreen resource */}
                 {imageSrc && (
                     <img
@@ -192,8 +222,7 @@ const Backgrounder: React.FC = () => {
                     setImgHeight(600);
                 }}
                 disabled={!imageSrc}
-                style={{ marginLeft: 8 }}
-            >
+                style={{ marginLeft: 8 }}>
                 Clear Image
             </button>
         </div>
