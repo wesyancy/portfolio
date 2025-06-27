@@ -45,12 +45,13 @@
 
 .projects-layout {
     display: flex;
-    height: 100vh; /* or 100% if you want it to only fill parent */
+    /* height: 100vh; */
     background: #1e1e1e;
+    
 }
 
 .explorer-pane {
-    width: 240px;
+    width: 200px;
     background: #252526;
     color: #d4d4d4;
     border-right: 1px solid #2a2d2e;
@@ -59,6 +60,7 @@
         'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
     min-width: 180px;
     user-select: none;
+    /* height: 100%; */
 }
 
 .explorer-folder {
@@ -115,7 +117,8 @@
 
 .projectPageDiv {
     flex: 1;
-    padding: 32px 50px;
+    padding: 1% 2%;
+    /* padding-bottom: 1rem; */
     background: #1e1e1e;
     color: #d4d4d4;
     font-family: inherit;

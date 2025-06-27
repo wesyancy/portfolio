@@ -1,11 +1,11 @@
-import ProjectsSideBar from './ProjectsSideBar/ProjectsSideBar';
+import ProjectsMenu from './ProjectsMenu';
 import { Outlet } from 'react-router-dom';
 import './Projects.css';
 
 const Projects = () => {
     return (
         <div className="vs-root">
-            <ProjectsSideBar />
+            <ProjectsMenu />
             {/* <div className="vs-main-area"> */}
             <Outlet />
             {/* </div> */}

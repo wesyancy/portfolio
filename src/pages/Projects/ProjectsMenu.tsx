@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { VscChevronDown, VscChevronRight } from 'react-icons/vsc';
-import './ProjectsSideBar.css';
+import './ProjectsMenu.css';
 
 import Backgrounder from '../Backgrounder/backgrounder';
+import Krux from '../Krux/Krux';
 // import BlogPlatform from '../BlogPlatform/BlogPlatform'; // (example future components)
 
 type ProjectMenuItem = {
@@ -13,11 +14,11 @@ type ProjectMenuItem = {
 
 const projectMenu: ProjectMenuItem[] = [
     {
-        name: 'Backgrounder',
-        component: <Backgrounder />,
+        name: 'Krux',
+        component: <Krux />,
     },
     {
-        name: 'Blog Platform',
+        name: 'Backgrounder',
         component: <Backgrounder />,
     },
 ];
