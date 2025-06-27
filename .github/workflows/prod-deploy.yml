@@ -1,9 +1,9 @@
-name: Deploy Portfolio to S3
+name: Deploy Portfolio to AWS S3 Bucket
 
 on:
     push:
         branches:
-            - main # Or your deploy branch
+            - main
 
 jobs:
     deploy:
@@ -16,7 +16,7 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v3
               with:
-                  node-version: 20 # Or your app's version
+                  node-version: 20
 
             - name: Install Dependencies
               run: npm ci
