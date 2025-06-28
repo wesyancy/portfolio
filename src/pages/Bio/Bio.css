@@ -1,3 +1,61 @@
 .bioPageDiv {
     padding: 0 2rem;
 }
+
+.im-wes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wes {
+    /* background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ODY2NzZhamUzbjhocTdodG5hZmp5NnRzdHV6bGNlanBneXB5bHNvdSZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/UyasdfGvoibkD5gBVp/giphy.gif); */
+    background-image: url(/images/gif.webp);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+.content-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-block {
+    max-width: 40%;
+    padding: 2rem;
+    background-size: cover;
+    /* color: transparent; */
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 40%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+@media (max-width: 800px) {
+    .content-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-block {
+        max-width: 80%;
+        padding: 2rem;
+    }
+
+    img {
+        max-width: 80%;
+        border-radius: 1rem;
+        padding: 2rem;
+    }
+}
