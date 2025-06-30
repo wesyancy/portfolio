@@ -36,10 +36,10 @@ const Bio = () => {
                     fleet-tracking dashboards, I wake up ready to make an impact
                     (and maybe a perfectly timed dad joke).
                 </h3>
-                <img src="public/images/WesSamuraiJack.jpeg"></img>
+                <img src="/images/WesSamuraiJack.jpeg"></img>
             </div>
             <div className="content-block">
-                <img src="public/images/Wes.jpeg"></img>
+                <img src="/images/Wes.jpeg"></img>
                 <h3 className="text-block">
                     My secret weapon? A one-two punch of technical chops and
                     people skills that lets me bridge the gap between product,
