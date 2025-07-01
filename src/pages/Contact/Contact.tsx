@@ -5,38 +5,42 @@ const Contact = () => {
     return (
         <div className="contactPageDiv">
             <h1>Contact Info</h1>
-            <p>
+            <div>
                 <Link
                     to="mailto:wes.kyancy@gmail.com"
                     id="externalLink"
-                    target="_blank">
+                    target="_blank"
+                    className='contact-link'>
                     Email
                 </Link>
-            </p>
-            <p>
+            </div>
+            <div>
                 <Link
                     to="https://bitesizedbrilliance.substack.com/"
                     id="externalLink"
-                    target="_blank">
+                    target="_blank"
+                    className='contact-link'>
                     Newsletter
                 </Link>
-            </p>
-            <p>
+            </div>
+            <div>
                 <Link
                     to="https://www.linkedin.com/in/wesley-yancy"
                     id="externalLink"
-                    target="_blank">
+                    target="_blank"
+                    className='contact-link'>
                     LinkedIn
                 </Link>
-            </p>
-            <p>
+            </div>
+            <div>
                 <Link
                     to="https://github.com/wesyancy"
                     id="externalLink"
-                    target="_blank">
+                    target="_blank"
+                    className='contact-link'>
                     GitHub
                 </Link>
-            </p>
+            </div>
         </div>
     );
 };
