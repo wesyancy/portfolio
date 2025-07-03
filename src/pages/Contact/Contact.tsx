@@ -1,45 +1,46 @@
 import './Contact.css';
-import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
         <div className="contactPageDiv">
             <h1>Contact Info</h1>
-            <div>
-                <Link
-                    to="mailto:wes.kyancy@gmail.com"
-                    id="externalLink"
+            <div className="contact-link-container">
+                <a
+                    className="contact-link"
+                    href="mailto:wes.kyancy@gmail.com"
                     target="_blank"
-                    className='contact-link'>
+                    rel="noopener noreferrer"
+                    id="externalLink"
+                >
                     Email
-                </Link>
-            </div>
-            <div>
-                <Link
-                    to="https://bitesizedbrilliance.substack.com/"
-                    id="externalLink"
+                </a>
+                <a
+                    className="contact-link"
+                    href="https://bitesizedbrilliance.substack.com/"
                     target="_blank"
-                    className='contact-link'>
+                    rel="noopener noreferrer"
+                    id="externalLink"
+                >
                     Newsletter
-                </Link>
-            </div>
-            <div>
-                <Link
-                    to="https://www.linkedin.com/in/wesley-yancy"
-                    id="externalLink"
+                </a>
+                <a
+                    className="contact-link"
+                    href="https://www.linkedin.com/in/wesley-yancy"
                     target="_blank"
-                    className='contact-link'>
+                    rel="noopener noreferrer"
+                    id="externalLink"
+                >
                     LinkedIn
-                </Link>
-            </div>
-            <div>
-                <Link
-                    to="https://github.com/wesyancy"
-                    id="externalLink"
+                </a>
+                <a
+                    className="contact-link"
+                    href="https://github.com/wesyancy"
                     target="_blank"
-                    className='contact-link'>
+                    rel="noopener noreferrer"
+                    id="externalLink"
+                >
                     GitHub
-                </Link>
+                </a>
             </div>
         </div>
     );

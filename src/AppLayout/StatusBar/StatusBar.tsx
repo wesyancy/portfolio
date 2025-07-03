@@ -8,7 +8,7 @@ const StatusBar: React.FC = () => (
     <div className="statusbar-left">
       <div className="statusbar-item remote">
         <VscRemote size={16} style={{ marginRight: 4 }} />
-        {/* SSH: wes@host */}
+        SSH: wes@host
       </div>
       <div className="statusbar-item">
         <VscSourceControl size={16} style={{ marginRight: 4 }} />

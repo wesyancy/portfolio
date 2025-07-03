@@ -1,12 +1,33 @@
 .contactPageDiv {
     padding: 0 2rem;
+    height: 98svh;
 }
 
-#externalLink {
-    text-decoration: none;
-    color: #d4d4d4;
+.contact-link-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(37%, 1fr));
 }
 
 .contact-link {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 13rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #d4d4d4;
+    background-color: sienna;
+}
+
+@media (max-width: 768px) {
+    .contact-link-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-link {
+        min-height: 10px;
+        max-height: 20px;
+    }
 }
