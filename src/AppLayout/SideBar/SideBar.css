@@ -41,6 +41,9 @@
     font-size: 22px;
 }
 
-.vs-sidebar-btn.active:hover {
+.vs-sidebar-btn:hover {
+    color: #fcfcfc;
+}
+.vs-sidebar-btn.active {
     color: #fcfcfc;
 }
