@@ -2,7 +2,22 @@
     padding: 0 2rem;
 }
 
-.bite-iframe {
+.news-page-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bite-image {
     width: 90svw;
-    height: 80svh;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.news-link {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI',
+        'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #a09f9f;
 }

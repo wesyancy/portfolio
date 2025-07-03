@@ -101,6 +101,7 @@ const Backgrounder = () => {
 
     return (
         <div className="backgrounder-master-div">
+            <h1>Backgrounder</h1>
             <label>
                 Upload image:
                 <input
@@ -195,7 +196,7 @@ const Backgrounder = () => {
                     style={{
                         border: '1px solid #aaa',
                         maxWidth: '75svw',
-                        maxHeight: '70svh',
+                        maxHeight: '55svh',
                         display: 'block',
                         margin: '16px 0',
                     }}></canvas>

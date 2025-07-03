@@ -35,7 +35,7 @@
     /* text-transform: uppercase; */
 }
 
-img {
+.bio-image {
     max-width: 40%;
     border-radius: 1rem;
     padding: 2rem;

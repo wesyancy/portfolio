@@ -1,4 +1,6 @@
 .backgrounder-master-div {
     overflow: scroll;
     max-height: 90svh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI',
+        'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
