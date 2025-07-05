@@ -21,6 +21,15 @@
     color: #d4d4d4;
     background-color: sienna;
 }
+/* .contact-link1 {
+    background-image: url(/images/gif.webp);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+} */
 
 @media (max-width: 768px) {
     .contact-link-container {

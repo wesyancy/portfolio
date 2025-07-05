@@ -10,8 +10,7 @@ const Contact = () => {
                     href="mailto:wes.kyancy@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    id="externalLink"
-                >
+                    id="externalLink">
                     Email
                 </a>
                 <a
@@ -19,8 +18,7 @@ const Contact = () => {
                     href="https://bitesizedbrilliance.substack.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    id="externalLink"
-                >
+                    id="externalLink">
                     Newsletter
                 </a>
                 <a
@@ -28,8 +26,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/wesley-yancy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    id="externalLink"
-                >
+                    id="externalLink">
                     LinkedIn
                 </a>
                 <a
@@ -37,8 +34,7 @@ const Contact = () => {
                     href="https://github.com/wesyancy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    id="externalLink"
-                >
+                    id="externalLink">
                     GitHub
                 </a>
             </div>
